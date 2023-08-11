@@ -1,0 +1,16 @@
+[package]
+name = "ros2_rust_template"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+safe_drive = "0.2"
+std_msgs = {path = "./.msg/std_msgs"}
+ros2_rust_util = {git = "https://github.com/TakanoTaiga/ros2_rust_util.git"}
+
+[package.metadata.ros]
+msg = ["std_msgs"]
+msg_dir = "./.msg/"
+safe_drive_version = "0.2"
